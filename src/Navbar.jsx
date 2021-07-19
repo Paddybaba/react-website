@@ -11,44 +11,69 @@ const Navbar = () => {
               <div className="container-fluid">
                 <NavLink className="navbar-brand" to="/">
                   Gupta Hospital
-          </NavLink>
+                </NavLink>
                 <button
-                  className="navbar-toggler"
+                  class="navbar-toggler"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
                   aria-expanded="false"
                   aria-label="Toggle navigation"
                 >
-                  <span className="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div
+                  className="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
                   <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active" className="nav-link" exact to="/">
+                      <NavLink
+                        activeClassName="menu_active"
+                        className="nav-link"
+                        exact
+                        to="/"
+                      >
                         Home
-                </NavLink>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active" className="nav-link" to="/contact">
+                      <NavLink
+                        activeClassName="menu_active"
+                        className="nav-link"
+                        to="/contact"
+                      >
                         Contact
-                </NavLink>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active" className="nav-link" to="/tpa">
+                      <NavLink
+                        activeClassName="menu_active"
+                        className="nav-link"
+                        to="/tpa"
+                      >
                         Corporate and TPAs
-                </NavLink>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active" className="nav-link" to="doctors">
+                      <NavLink
+                        activeClassName="menu_active"
+                        className="nav-link"
+                        to="doctors"
+                      >
                         Our Doctors
-                </NavLink>
+                      </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active" className="nav-link" to="/dept">
+                      <NavLink
+                        activeClassName="menu_active"
+                        className="nav-link"
+                        to="/dept"
+                      >
                         Departments
-                </NavLink>
+                      </NavLink>
                     </li>
                     {/* <li className="nav-item dropdown">
                 <NavLink
@@ -108,9 +133,7 @@ const Navbar = () => {
               </div>
             </nav>
           </div>
-
         </div>
-
       </div>
     </>
   );
