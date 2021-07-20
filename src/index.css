@@ -7,24 +7,50 @@
   box-sizing: border-box;
   font-family: "Kanit", "Dosis", sans-serif;
 }
+
+/* //////////// NavBars///////////// */
+.main-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 0px 10px;
+  /* border: 2px solid red; */
+}
 .navbar-brand {
   color: dodgerblue !important;
   font-weight: bold;
   font-size: 1.7em !important;
 }
+.navbar-brand h2:hover {
+  color: rgb(3, 77, 150);
+}
+.pa-0 {
+  padding: 0;
+}
 .navbar {
   background-color: #fff !important;
+  padding: 0 !important;
 }
 
 .navbar a {
-  color: #2f2f2f;
+  color: dodgerblue;
 }
 .navbar a:hover {
-  color: #00a2ff;
+  color: rgb(3, 77, 150);
   font-weight: bold;
   border-bottom: 1ps dotted dodgerblue;
 }
-
+.navbar-labels {
+  color: dodgerblue;
+  font-size: 12px;
+  line-height: 0px;
+  margin: 10px 10px;
+}
+.navbar-labels:hover {
+  color: rgb(3, 77, 150);
+  cursor: pointer;
+  font-weight: 700;
+}
 .iconBlack {
   color: black;
 }
@@ -33,7 +59,7 @@
   border-bottom: dodgerblue 2px solid;
 }
 .b {
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 /* //////////////////LANDING PAGE ///////////////// */

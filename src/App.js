@@ -10,13 +10,14 @@ import TPA from "./TPA";
 import Departments from "./Departments";
 import OurDoctors from "./Our_Doctors";
 import Navbar from "./Navbar.jsx";
-// import Navbar2 from "./Navbar2";
+import Navbar1 from "./Navbar1";
 
 import { Switch, Route, Redirect } from "react-router";
 const App = () => {
   return (
     <>
-      <Navbar />
+      <Navbar1 />
+      {/* <Navbar /> */}
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/contact" component={Contact} />
