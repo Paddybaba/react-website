@@ -68,9 +68,17 @@
 }
 .bor3 {
   border: 1px solid rgb(0, 119, 255);
+  background-color: aquamarine;
+  height: 100px;
 }
 .bor4 {
   border: 1px solid rgb(255, 0, 234);
+}
+.c-black {
+  background-color: black;
+}
+.c-green {
+  background-color: green;
 }
 
 .navbar-strip {
@@ -149,3 +157,51 @@
     transform: translateY(-5%);
   }
 }
+
+/* ///////// About /////// */
+#about img {
+  width: 95%;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: cadetblue 5px 5px;
+}
+#about h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 10px;
+}
+#about p {
+  margin-top: 10px;
+  line-height: 18px;
+  text-align: justify;
+}
+
+/* //////////Media Queries ///////////////  */
+/* // Source mixins */
+
+/* // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }` */
+@media (max-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #about p {
+    /* color: crimson; */
+    font-size: 0.8em;
+    line-height: 16px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+/* // Usage */
