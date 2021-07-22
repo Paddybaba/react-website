@@ -18,8 +18,10 @@ import { Switch, Route, Redirect } from "react-router";
 const App = () => {
   return (
     <>
-      <Navbar1 />
-      <Navbar3 />
+      <div className="row fixed-bar">
+        <Navbar1 />
+        <Navbar3 />
+      </div>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />

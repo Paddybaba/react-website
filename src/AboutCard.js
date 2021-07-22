@@ -1,13 +1,16 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-const AboutCard = () => {
+const AboutCard = ({ img, title }) => {
   return (
     <>
       <div className="abt-card">
         <figure>
-          <img src="/resources/design/hospitalpic.jpg" />
+          <img src={img} />
         </figure>
-        <button>Overview</button>
+        <NavLink className="card-btn" to="/">
+          {title}
+        </NavLink>
       </div>
     </>
   );

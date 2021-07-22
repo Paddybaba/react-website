@@ -6,12 +6,15 @@ const About = () => {
     <>
       <section id="about" className="d-flex align-itmes-center">
         <div className="container-fluid nav-bg">
-          <div className="row bor">
-            <div className="col-10 mx-auto b">
-              <div className="row bor1">
-                <h1>About Us (Photo and Text)</h1>
+          <div className="row">
+            <div className="col-10 mx-auto">
+              <div className="row">
+                <h1>About Us</h1>
                 <div className="col-sm-4 col-md-6 ">
-                  <img src="/resources/design/hospitalpic.jpg" />
+                  <img
+                    className="hospital-image"
+                    src="/resources/design/hospitalpic.jpg"
+                  />
                 </div>
                 <div className="col-sm-8 col-md-6 ">
                   <p>
@@ -42,155 +45,57 @@ const About = () => {
               </div>
 
               <div className="row">
-                <h1>Row 1 with 4 cards</h1>
-                <div className="col-lg-3 col-sm-6 bor3">
-                  <AboutCard />
-                </div>
-                <div className="col-lg-3 col-sm-6 bor3">
-                  <AboutCard />
-                </div>
-                <div className="col-lg-3 col-sm-6 bor3">
-                  <AboutCard />
-                </div>
-                <div className="col-lg-3 col-sm-6 bor3">
-                  <AboutCard />
-                </div>
-              </div>
-
-              {/* <div className="row">
-                <h1>Row 1 with 4 cards</h1>
                 <div className="col-lg-3 col-sm-6">
-                  <div class="card" style={{ width: "17rem" }}>
-                    <div className="card-image">
-                      <img
-                        src="/resources/design/hospitalpic.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="card-body">
-                      <NavLink to="/" class="btn btn-primary">
-                        Overview
-                      </NavLink>
-                    </div>
-                  </div>
+                  <AboutCard
+                    img="/resources/design/hospitalpic.jpg"
+                    title="Overview"
+                  />
                 </div>
-                <div className="col-lg-3 col-sm-6 ">
-                  <div class="card" style={{ width: "17rem" }}>
-                    <div className="card-image">
-                      <img
-                        src="/resources/design/social.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="card-body">
-                      <NavLink to="/" class="btn btn-primary">
-                        Mission and Vision
-                      </NavLink>
-                    </div>
-                  </div>
+                <div className="col-lg-3 col-sm-6">
+                  <AboutCard
+                    img="/resources/design/accredition.jpg"
+                    title="Hospital Acredition"
+                  />
                 </div>
-                <div className="col-lg-3 col-sm-6 ">
-                  <div class="card" style={{ width: "17rem" }}>
-                    <div className="card-image">
-                      <img
-                        src="/resources/design/factsheet.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="card-body">
-                      <NavLink to="/" class="btn btn-primary">
-                        Factsheet
-                      </NavLink>
-                    </div>
-                  </div>
+                <div className="col-lg-3 col-sm-6">
+                  <AboutCard
+                    img="/resources/design/factsheet.jpg"
+                    title="Factsheet"
+                  />
                 </div>
-                <div className="col-lg-3 col-sm-6 ">
-                  <div class="card" style={{ width: "17rem" }}>
-                    <div className="card-image">
-                      <img
-                        src="/resources/design/technology.jpg"
-                        class="card-img-top card-image"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="card-body">
-                      <NavLink to="/" class="btn btn-primary">
-                        Advanced Technology
-                      </NavLink>
-                    </div>
-                  </div>
+                <div className="col-lg-3 col-sm-6">
+                  <AboutCard
+                    img="/resources/design/infra.jpg"
+                    title="Infrastructure"
+                  />
                 </div>
               </div>
               <div className="row">
-                <h1>Row 2 with 4 cards</h1>
                 <div className="col-lg-3 col-sm-6">
-                  <div class="card" style={{ width: "17rem" }}>
-                    <div className="card-image">
-                      <img
-                        src="/resources/design/infra.jpg"
-                        class="card-img-top card-image"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="card-body">
-                      <NavLink to="/" class="btn btn-primary">
-                        Infrastructure
-                      </NavLink>
-                    </div>
-                  </div>
+                  <AboutCard
+                    img="/resources/design/infra.jpg"
+                    title="Awards and Acheivements"
+                  />
                 </div>
                 <div className="col-lg-3 col-sm-6">
-                  <div class="card" style={{ width: "17rem" }}>
-                    <div className="card-image">
-                      <img
-                        src="/resources/design/message.jpg"
-                        class="card-img-top card-image"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="card-body">
-                      <NavLink to="/" class="btn btn-primary">
-                        Founder`s Message
-                      </NavLink>
-                    </div>
-                  </div>
+                  <AboutCard
+                    img="/resources/design/technology.jpg"
+                    title="Technology"
+                  />
                 </div>
                 <div className="col-lg-3 col-sm-6">
-                  <div class="card" style={{ width: "17rem" }}>
-                    <div className="card-image">
-                      <img
-                        src="/resources/design/accredition.jpg"
-                        class="card-img-top card-image"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="card-body">
-                      <NavLink to="/" class="btn btn-primary">
-                        Hospital Accreditions
-                      </NavLink>
-                    </div>
-                  </div>
+                  <AboutCard
+                    img="/resources/design/message.jpg"
+                    title="Founder`s Message"
+                  />
                 </div>
                 <div className="col-lg-3 col-sm-6">
-                  <div class="card" style={{ width: "17rem" }}>
-                    <div className="card-image">
-                      <img
-                        src="/resources/design/hospitalpic.jpg"
-                        class="card-img-top card-image"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="card-body">
-                      <NavLink to="/" class="btn btn-primary">
-                        Achievments and Awards
-                      </NavLink>
-                    </div>
-                  </div>
+                  <AboutCard
+                    img="/resources/design/social.jpg"
+                    title="Social Resposibility"
+                  />
                 </div>
-              </div> */}
+              </div>
               <div className="row">I am footer</div>
             </div>
           </div>

@@ -9,12 +9,17 @@
 }
 
 /* //////////// NavBars///////////// */
+.fixed-bar {
+  display: block;
+  position: fixed;
+  top: -5px;
+  background-color: white;
+}
 .main-logo {
   width: 30px;
   height: 30px;
   border-radius: 5px;
   margin: 0px 10px;
-  /* border: 2px solid red; */
 }
 .navbar-brand {
   color: dodgerblue !important;
@@ -158,8 +163,8 @@
   }
 }
 
-/* ///////// About /////// */
-#about img {
+/* ///////// About /////////////////////////////////////////////////////////////////////////////////// */
+.hospital-image {
   width: 95%;
   margin: 10px;
   border-radius: 5px;
@@ -181,9 +186,45 @@
   overflow: hidden;
 }
 .abt-card {
-  width: 98%;
-  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 4px solid white;
 }
+.abt-card img {
+  width: 100%;
+  border-radius: 5px;
+  height: 30vh;
+  box-shadow: rgb(173, 173, 173) 3px 3px;
+  transition: all 500ms ease;
+}
+.abt-card img:hover {
+  transform: scale(1.05);
+}
+.card-btn {
+  width: 94%;
+  margin-top: -10px;
+  border: honeydew;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  background-image: linear-gradient(to right, #1a2980 0%, #26d0ce 100%);
+  transition: all 500ms ease;
+}
+.card-btn:hover {
+  color: #fff;
+  background-image: linear-gradient(to right, #26d0ce 0%, #1a2980 100%);
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 /* //////////Media Queries ///////////////  */
 /* // Source mixins */
 

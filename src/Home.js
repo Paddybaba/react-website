@@ -16,7 +16,7 @@ const Home = () => {
           <div className="row b">
             <div className="col-10 mx-auto b">
               <div className="row">
-                <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 b">
+                <div className="col-md-6 pt-5 mt-5 pt-lg-0 order-2 order-lg-1 b">
                   <h1>Welcome to</h1>
                   <h1>
                     <strong className="brand-name"> Gupta Hospital</strong>
