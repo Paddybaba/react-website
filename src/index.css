@@ -163,7 +163,7 @@
   width: 95%;
   margin: 10px;
   border-radius: 5px;
-  box-shadow: cadetblue 5px 5px;
+  box-shadow: rgb(173, 173, 173) 3px 3px;
 }
 #about h1 {
   text-align: center;
@@ -175,7 +175,15 @@
   line-height: 18px;
   text-align: justify;
 }
-
+.card-image {
+  width: 95%;
+  height: 180px;
+  overflow: hidden;
+}
+.abt-card {
+  width: 98%;
+  padding: 1%;
+}
 /* //////////Media Queries ///////////////  */
 /* // Source mixins */
 
@@ -185,7 +193,7 @@
 
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  #about p {
+  #about p li {
     /* color: crimson; */
     font-size: 0.8em;
     line-height: 16px;
