@@ -2,6 +2,7 @@ import React from "react";
 import "../pages/pages.css";
 
 const IVF = () => {
+  const doc = "/resources/doctors/draradhna.jpg";
   return (
     <>
       <section id="ivf" className="d-flex align-itmes-center">
@@ -72,7 +73,23 @@ const IVF = () => {
                   </div>
                 </div>
                 <div className="col-lg-5 bor1">
-                  <div className="bor2"></div>
+                  <div className="">
+                    <h2 className="heading-2">Our consultants</h2>
+                    <div className="d-flex doc-card-row">
+                      <figure>
+                        <img
+                          className="consultant-1 me-3"
+                          src="/resources/doctors/draradhna.jpg"
+                        />
+                      </figure>
+                      <p>
+                        Dr Aradhna Gupta <br /> M.B.B.S. , D.G.O. <br />{" "}
+                        Infertility Specialist
+                      </p>
+                    </div>
+                    <div className="bor2"></div>
+                    <div className="bor2"></div>
+                  </div>
                 </div>
               </div>
               <div className="row">
