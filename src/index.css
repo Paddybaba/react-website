@@ -102,10 +102,12 @@
 /* //////////////////LANDING PAGE ///////////////// */
 .carousel-background {
   width: 100%;
+  height: 100vh;
   position: absolute;
   top: 11%;
   left: 0;
   z-index: -1;
+  overflow: hidden;
 }
 .darken {
   margin: 0;
@@ -201,9 +203,9 @@
   box-shadow: rgb(173, 173, 173) 3px 3px;
   transition: all 500ms ease;
 }
-.abt-card img:hover {
+/* .abt-card img:hover {
   transform: scale(1.05);
-}
+} */
 .card-btn {
   width: 94%;
   margin-top: -10px;
@@ -213,14 +215,21 @@
   text-transform: uppercase;
   color: white;
   box-shadow: 0 0 20px #eee;
+  background-size: 200% auto;
   border-radius: 10px;
   display: block;
-  background-image: linear-gradient(to right, #1a2980 0%, #26d0ce 100%);
+  background-image: linear-gradient(
+    to right,
+    #1a2980 0%,
+    #26d0ce 51%,
+    #1a2980 100%
+  );
   transition: all 500ms ease;
 }
 .card-btn:hover {
   color: #fff;
-  background-image: linear-gradient(to right, #26d0ce 0%, #1a2980 100%);
+  background-position: right center;
+  /* background-image: linear-gradient(to right, #26d0ce 0%, #1a2980 100%); */
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -253,4 +262,17 @@
 @media (min-width: 1400px) {
 }
 
-/* // Usage */
+footer {
+  background-color: rgb(70, 70, 70);
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  transition: all 500ms ease;
+  border-bottom: 1px solid transparent;
+}
+footer a:hover {
+  color: rgb(211, 211, 211);
+  border-bottom: 1px solid whitesmoke;
+}

@@ -55,7 +55,7 @@ const Navbar3 = () => {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <NavLink className="dropdown-item" to="/">
+                      <NavLink className="dropdown-item" to="/ivf">
                         Fertility and Test tube baby
                       </NavLink>
                     </li>

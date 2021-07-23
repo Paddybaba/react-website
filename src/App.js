@@ -13,15 +13,14 @@ import OurDoctors from "./Our_Doctors";
 import Navbar2 from "./Navbar2.js";
 import Navbar1 from "./Navbar1.js";
 import Navbar3 from "./Navbar3.js";
-
+import Footer from "./Footer";
+import IVF from "./pages/IVF";
 import { Switch, Route, Redirect } from "react-router";
 const App = () => {
   return (
     <>
-      <div className="row fixed-bar">
-        <Navbar1 />
-        <Navbar3 />
-      </div>
+      <Navbar1 />
+      <Navbar3 />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
@@ -29,8 +28,10 @@ const App = () => {
         <Route exact path="/tpa" component={TPA} />
         <Route exact path="/dept" component={Departments} />
         <Route exact path="/doctors" component={OurDoctors} />
+        <Route exact path="/ivf" component={IVF} />
         <Redirect to="/" />
       </Switch>
+      <Footer />
       {/* <h1> Hello World</h1> */}
     </>
   );

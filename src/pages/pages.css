@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  /* border-bottom: 2px solid dodgerblue; */
+}
+h1::after {
+  display: block;
+  margin: 0 auto;
+  content: "";
+  height: 2px;
+  border: 1px solid dodgerblue;
+  width: 200px;
+}
+.heading-1 {
+  width: fit-content;
+  padding: 0 5%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+  text-align: center;
+}
+/* ////////////////////////////////// IVF /////////////////////////////////////////// */
+#ivf {
+  justify-content: center;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+#ivf .showcase {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: dodgerblue 2px 2px;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.2em;
+}
+.info p {
+  font-size: 1rem;
+}
+/* //////////////////////// MEDIA QUERIES //////////////////////////////////////////// */
+@media (max-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  p {
+    font-size: 90%;
+    line-height: 16px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
