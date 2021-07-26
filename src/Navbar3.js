@@ -60,7 +60,7 @@ const Navbar3 = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink className="dropdown-item" to="/">
+                      <NavLink className="dropdown-item" to="/medicine">
                         Medicine
                       </NavLink>
                     </li>
@@ -68,8 +68,8 @@ const Navbar3 = () => {
                       <hr className="dropdown-divider" />
                     </li> */}
                     <li>
-                      <NavLink className="dropdown-item" to="/">
-                        Surgery
+                      <NavLink className="dropdown-item" to="/gensur">
+                        General and Laproscopic Surgery
                       </NavLink>
                     </li>
                     <li>
@@ -101,7 +101,7 @@ const Navbar3 = () => {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <NavLink className="dropdown-item" to="/">
+                      <NavLink className="dropdown-item" to="/doctors">
                         Dr Sumit Gupta
                       </NavLink>
                     </li>
