@@ -1,86 +1,50 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import CarouselCard from "../components/CarouselCard";
+import DoctorCard from "../components/DoctorCard";
 const Doctors = () => {
   return (
     <>
       <section id="doctors" className="">
+        <div className="d-flex justify-content-center pt-3">
+          <h2>Our Doctors</h2>
+        </div>
         <Carousel variant="dark">
           <Carousel.Item>
-            <div className="b1 row">
-              <div className="b2 block-1-of-3"></div>
-              <div className="b2 block-2-of-3"></div>
-            </div>
+            <DoctorCard
+              drname="Dr Anup Padamwar"
+              degree="MBBS , MD Obstetrics & Gyanaecology"
+              addQual="Fertility Specialist"
+              description="s;kajfd l;ojks ;lksd;kf sdfgks ;oskdfplok sd;ofkipdso sd;oliksdopfi ds;ofgisdpo "
+              image="/resources/doctors/dranup.jpg"
+            />
           </Carousel.Item>
-
           {/* <Carousel.Item>
-            <figure className="">
-              <img
-                className="d-block col-lg-6"
-                src="/resources/doctors/drsumit.jpg"
-                alt="First slide"
-              />
-            </figure>
-            <div className="caption col-lg-6">
-              <Carousel.Caption>
-                <div className="caption-text">
-                  <h3>Dr Sumit Gupta</h3>
-                  <h4>MBBS, MS Gen. Surgery</h4>
-                  <p>
-                    fljsdalk lsfiuop opopopisdfp poiwek ds;of, pok opk dssfljsdf
-                    sdlkfjsdlkjf dslkujfldksjf sdjfsdlkfj sdlopjflkj p9890mm
-                    lkjdsfm <br /> iuoiuew oiuoeupp oiu oiueowutij lkeotu,oidfsu{" "}
-                    <br />
-                    oiuoiuwe kihyiyjusdfuoiuew oiueo io
-                  </p>
-                </div>
-              </Carousel.Caption>
-            </div>
+            <CarouselCard
+              drname="Dr Anup Padamwar"
+              degree="MBBS , MS Orthopaedics"
+              addQual="Fellowship in Joint replacement and Trauma Surgery"
+              description="s;kajfd l;ojks ;lksd;kf sdfgks ;oskdfplok sd;ofkipdso sd;oliksdopfi ds;ofgisdpo "
+              image="/resources/doctors/dranup.jpg"
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <figure>
-              <img
-                className="d-block "
-                src="/resources/doctors/drvivek.jpg"
-                alt="First slide"
-              />
-            </figure>{" "}
-            <div className="caption">
-              <Carousel.Caption>
-                <div className="caption-text">
-                  <h3>Dr Vivek Tigga</h3>
-                  <h4>M.B.B.S. M.D. Medicine</h4>
-                  <p>
-                    sadopa oiuewo oiuewoiru oiuoj lijdsoifj.,voiu ioweuy
-                    sdlifuoiewurfo sdliofu98weurkjldkj sdiofu[0we9urlmewifou
-                    fo;iweur{" "}
-                  </p>
-                </div>
-              </Carousel.Caption>
-            </div>
+            <CarouselCard
+              drname="Dr Vivek Tigga"
+              degree="MBBS , MD Medicine"
+              addQual="Fellowship in Cardiology and Infectious diseases"
+              description="s;kajfd l;ojks ;lksd;kf sdfgks ;oskdfplok sd;ofkipdso sd;oliksdopfi ds;ofgisdpo "
+              image="/resources/doctors/drvivek.jpg"
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <figure>
-              <img
-                className="d-block "
-                src="/resources/doctors/dranup.jpg"
-                alt="First slide"
-              />
-            </figure>{" "}
-            <div className="caption">
-              <Carousel.Caption>
-                <div className="caption-text">
-                  <h3>Dr Anup Padamwar</h3>
-                  <h4>M.B.B.S. M.S. Orthopaedics</h4>
-                  <p>
-                    ljkfposw ;oie ;oipoipoiew ;woeripoi w;eiorpo sd;iofpoi
-                    weroiufp9kf;lsi sdfljsdpofkpokisd flsdkjfoisjdopisdopf;
-                    msdofuopsdif sdflijuoidsuf sdflusdoifuoewjr
-                    dsflksudfopmsdflkusdiouf{" "}
-                  </p>
-                </div>
-              </Carousel.Caption>
-            </div>
+            <CarouselCard
+              drname="Dr Sumit Gupta"
+              degree="MBBS , MS Surgery"
+              addQual="Fellowship in Laproscopic Surgery"
+              description="s;kajfd l;ojks ;lksd;kf sdfgks ;oskdfplok sd;ofkipdso sd;oliksdopfi ds;ofgisdpo "
+              image="/resources/doctors/drsumit.jpg"
+            />
           </Carousel.Item> */}
         </Carousel>
       </section>

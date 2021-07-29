@@ -22,7 +22,7 @@ import { Switch, Route, Redirect } from "react-router";
 const App = () => {
   return (
     <>
-      <Navbar1 />
+      {/* <Navbar1 /> */}
       <Navbar3 />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -37,6 +37,7 @@ const App = () => {
         <Route exact path="/doctors" component={Doctors} />
         <Redirect to="/" />
       </Switch>
+      {/* <Doctors /> */}
       <Footer />
       {/* <h1> Hello World</h1> */}
     </>

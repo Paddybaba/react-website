@@ -6,8 +6,8 @@ const Navbar3 = () => {
       <div className="navbar-strip">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <NavLink className="nav-link" to="/">
-              Home
+            <NavLink className="nav-link fs-2" to="/">
+              Gupta Hospital
             </NavLink>
             <button
               class="navbar-toggler"
@@ -28,7 +28,7 @@ const Navbar3 = () => {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav me-auto mb-lg-0">
+              <ul className="navbar-nav ms-auto mb-lg-0">
                 <li className="nav-item">
                   <NavLink className="nav-link" aria-current="page" to="/about">
                     About Us
@@ -172,13 +172,8 @@ const Navbar3 = () => {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <NavLink
-                    className="nav-link disabled"
-                    to="/"
-                    tabindex="-1"
-                    aria-disabled="true"
-                  >
-                    Disabled
+                  <NavLink className="nav-link" to="/">
+                    Contact
                   </NavLink>
                 </li>
               </ul>

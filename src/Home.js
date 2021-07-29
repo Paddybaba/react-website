@@ -8,15 +8,15 @@ const Home = () => {
   const photo = "/resources/design/hospital.png";
   return (
     <>
-      <section id="header" className="d-flex align-itmes-center">
+      <section id="header" className="d-flex align-itmes-center bor2">
         <div className="container-fluid nav-bg">
-          <div className="carousel-background">
+          <div className="carousel-background bor1">
             <CarouselBG />
           </div>
-          <div className="row">
-            <div className="col-10 mx-auto b">
+          <div className="row tag-line">
+            <div className="col-10 mx-auto bor1">
               <div className="row">
-                <div className="col-md-6 pt-5 mt-5 pt-lg-0 order-2 order-lg-1 b">
+                <div className="col-md-8">
                   <h1>Welcome to</h1>
                   <h1>
                     <strong className="brand-name"> Gupta Hospital</strong>
