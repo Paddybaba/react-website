@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import logo from "./logo.svg";
-// import Carousel2 from "./Carousel2";
+import Navbar3 from "./Navbar3";
 import CarouselBG from "./CarouselBG";
 
 const Home = () => {
@@ -9,14 +8,11 @@ const Home = () => {
   return (
     <>
       <section id="header" className="d-flex align-itmes-center bor2">
-        <div className="container-fluid nav-bg">
-          <div className="carousel-background bor1">
-            <CarouselBG />
-          </div>
-          <div className="row tag-line">
-            <div className="col-10 mx-auto bor1">
+        <div className="container-fluid ">
+          <div className="tag-line bor2">
+            <div className="col-10 mx-auto">
               <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-8 tagline-box">
                   <h1>Welcome to</h1>
                   <h1>
                     <strong className="brand-name"> Gupta Hospital</strong>
@@ -25,6 +21,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="carousel-background">
+            <CarouselBG />
           </div>
         </div>
       </section>

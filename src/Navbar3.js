@@ -6,8 +6,14 @@ const Navbar3 = () => {
       <div className="navbar-strip">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <NavLink className="nav-link fs-2" to="/">
-              Gupta Hospital
+            <NavLink
+              className="nav-link fs-2 d-flex align-items-baseline"
+              to="/"
+            >
+              <div>
+                <img className="logo" src="/resources/design/logoGH.jpg" />
+              </div>
+              <h2>Gupta Hospital</h2>
             </NavLink>
             <button
               class="navbar-toggler"

@@ -23,7 +23,9 @@ const App = () => {
   return (
     <>
       {/* <Navbar1 /> */}
-      <Navbar3 />
+      <div style={{ position: "sticky", zIndex: 100 }}>
+        <Navbar3 />
+      </div>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
@@ -37,7 +39,7 @@ const App = () => {
         <Route exact path="/doctors" component={Doctors} />
         <Redirect to="/" />
       </Switch>
-      {/* <Doctors /> */}
+      <Doctors />
       <Footer />
       {/* <h1> Hello World</h1> */}
     </>

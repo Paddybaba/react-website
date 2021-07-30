@@ -1,7 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import CarouselCard from "../components/CarouselCard";
-import DoctorCard from "../components/DoctorCard";
+import DoctorCard1 from "../components/DoctorCard1";
 const Doctors = () => {
   return (
     <>
@@ -11,12 +10,39 @@ const Doctors = () => {
         </div>
         <Carousel variant="dark">
           <Carousel.Item>
-            <DoctorCard
-              drname="Dr Anup Padamwar"
-              degree="MBBS , MD Obstetrics & Gyanaecology"
+            <DoctorCard1
+              drname="Dr Aradhna Gupta"
+              degree="MBBS , MD Obs and Gynae"
               addQual="Fertility Specialist"
               description="s;kajfd l;ojks ;lksd;kf sdfgks ;oskdfplok sd;ofkipdso sd;oliksdopfi ds;ofgisdpo "
+              image="/resources/doctors/draradhna.jpg"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <DoctorCard1
+              drname="Dr Sumit Gupta"
+              degree="MBBS , MS Surgery"
+              addQual="Fellow Laproscopic Surgery"
+              description="s;kajfd l;ojks ;lksd;kf sdfgks ;oskdfplok sd;ofkipdso sd;oliksdopfi ds;ofgisdpo "
+              image="/resources/doctors/drsumit.jpg"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <DoctorCard1
+              drname="Dr Anup Padamwar"
+              degree="MBBS , MS Orthopaedics"
+              addQual="Fellow Joint replacement and Trauma Surgery"
+              description="s;kajfd l;ojks ;lksd;kf sdfgks ;oskdfplok sd;ofkipdso sd;oliksdopfi ds;ofgisdpo "
               image="/resources/doctors/dranup.jpg"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <DoctorCard1
+              drname="Dr Vivek Tigga"
+              degree="MBBS , MD Medicine"
+              addQual="Intensivists and Infectious Disease Specialist"
+              description="s;kajfd l;ojks ;lksd;kf sdfgks ;oskdfplok sd;ofkipdso sd;oliksdopfi ds;ofgisdpo "
+              image="/resources/doctors/drvivek.jpg"
             />
           </Carousel.Item>
           {/* <Carousel.Item>

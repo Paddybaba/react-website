@@ -6,8 +6,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kanit", "Dosis", sans-serif;
+  /* background-color: blue; */
 }
-
 /* //////////// NavBars///////////// */
 .fixed-bar {
   display: block;
@@ -15,9 +15,9 @@
   top: -5px;
   background-color: white;
 }
-.main-logo {
-  width: 30px;
-  height: 30px;
+.logo {
+  width: 35px;
+  height: 35px;
   border-radius: 5px;
   margin: 0px 10px;
 }
@@ -98,14 +98,24 @@
   background-image: "/resources/design/list.png";
 }
 /* //////////////////LANDING PAGE ///////////////// */
+.zero-padding {
+  padding: 0;
+}
 .carousel-background {
-  width: 100%;
-  /* height: 100vh; */
-  position: absolute;
-  top: 8%;
+  width: 120%;
+  margin-left: -10%;
+  margin-right: -10%;
+  margin-top: -32%;
   left: 0;
-  z-index: -1;
+  z-index: -10;
   overflow: hidden;
+}
+.carousel-after {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100px;
+  color: #1a2980;
 }
 .darken {
   margin: 0;
@@ -123,12 +133,23 @@
   color: dodgerblue;
   font-weight: bold;
 }
-.tag-line {
-  margin-bottom: 30%;
+.navbar-box {
+  z-index: 99;
+  margin-bottom: 100px;
 }
 .tag-line h1,
 .tag-line h2 {
   font-size: 3vw;
+}
+.tagline-box {
+  z-index: 99;
+  background: rgb(9, 149, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(195, 197, 210, 1) 0%,
+    rgba(195, 197, 210, 0) 99%
+  );
+  border-radius: 10px;
 }
 #header img {
   text-align: right;
@@ -229,8 +250,8 @@
 
 /* // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }` */
 @media (max-width: 576px) {
-  .tag-line {
-    margin-bottom: 8%;
+  .carousel-background {
+    margin-top: -48%;
   }
 }
 
@@ -240,9 +261,6 @@
     /* color: crimson; */
     font-size: 0.8em;
     line-height: 16px;
-  }
-  .tag-line {
-    margin-bottom: 20%;
   }
 }
 
