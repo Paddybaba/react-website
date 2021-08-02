@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Navbar3 from "./Navbar3";
 import CarouselBG from "./CarouselBG";
+import Doctors from "./pages/Doctors";
 
 const Home = () => {
   const photo = "/resources/design/hospital.png";
@@ -27,6 +28,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Doctors />
     </>
   );
 };

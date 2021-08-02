@@ -11,6 +11,9 @@ const Dept = ({
   info_2_heading,
   info_2_text,
   info_2_list,
+  info_3_heading,
+  info_3_text,
+  info_3_list,
   extra_heading,
   extra_card_pic,
   extra_card_text,
@@ -55,7 +58,17 @@ const Dept = ({
                     <h2 className="heading-1">{info_2_heading}</h2>
                     <p>{info_2_text}</p>
                     {info_2_list.split("<br>").map((item, i) => (
-                      <p key={i}>{`${i + 1}. ${item}`}</p>
+                      <p key={i}>{`${item}`}</p>
+                    ))}
+                  </div>
+                  <div className="info">
+                    <h2 className="heading-1">{info_3_heading}</h2>
+                    <p>{info_3_text}</p>
+                    {info_3_list.split("<br>").map((item, i) => (
+                      <div>
+                        <p key={i}>{`${item}`}</p>
+                        <hr></hr>
+                      </div>
                     ))}
                   </div>
                 </div>
