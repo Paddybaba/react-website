@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Navbar3 from "./Navbar3";
 import CarouselBG from "./CarouselBG";
 import Doctors from "./pages/Doctors";
-
+import OwlDepartments from "./components/OwlDepartments";
 const Home = () => {
   const photo = "/resources/design/hospital.png";
   return (
@@ -23,11 +23,13 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           <div className="carousel-background">
             <CarouselBG />
           </div>
         </div>
       </section>
+      <OwlDepartments />
       <Doctors />
     </>
   );

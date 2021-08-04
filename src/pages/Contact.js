@@ -21,7 +21,6 @@ const Contact = () => {
         extra_card_pic=""
         extra_card_text=""
       />
-      <OwlDepartments />
     </section>
   );
 };

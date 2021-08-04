@@ -1,0 +1,43 @@
+/* ///////////DEPARTMENT OWL CAROUSEL /////////////// */
+.owl-item-container {
+  border: 2px solid green;
+  width: 10vw;
+  margin: 10px;
+}
+.dept-logo {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.owl-item-title {
+  color: blueviolet;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-top: 10%;
+}
+
+/* ///////////////////// MEDIA QUERIES ////////////////// */
+@media (max-width: 576px) {
+  .owl-item-title {
+    font-size: 0.5em;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .owl-item-title {
+    font-size: 0.7em;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

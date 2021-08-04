@@ -2,80 +2,57 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import OwlItem from "./OwlItem";
 const OwlDepartments = () => {
   return (
     <>
       <div className="">
         <div className="">
           <div className="col-8 mx-auto">
-            <OwlCarousel className="owl-theme" items="5" loop margin={20} nav>
-              <div className="item"></div>
-              <div className="item">
-                <div className="dept-logo">
-                  <img
-                    src="/resources/departmentlogos/internal-medicine-icon.png"
-                    alt="medicine"
-                  ></img>
-                </div>
-              </div>
-              <div className="item">
-                <div className="dept-logo">
-                  <img
-                    src="/resources/departmentlogos/internal-medicine-icon.png"
-                    alt="medicine"
-                  ></img>
-                </div>
-              </div>
-              <div className="item">
-                <div className="dept-logo">
-                  <img
-                    src="/resources/departmentlogos/internal-medicine-icon.png"
-                    alt="medicine"
-                  ></img>
-                </div>
-              </div>
-              <div className="item">
-                <div className="dept-logo">
-                  <img
-                    src="/resources/departmentlogos/internal-medicine-icon.png"
-                    alt="medicine"
-                  ></img>
-                </div>
-              </div>
-              <div className="item">
-                <div className="dept-logo">
-                  <img
-                    src="/resources/departmentlogos/internal-medicine-icon.png"
-                    alt="medicine"
-                  ></img>
-                </div>
-              </div>
-              <div className="item">
-                <div className="dept-logo">
-                  <img
-                    src="/resources/departmentlogos/internal-medicine-icon.png"
-                    alt="medicine"
-                  ></img>
-                </div>
-              </div>
-              <div className="item">
-                <div className="dept-logo">
-                  <img
-                    src="/resources/departmentlogos/internal-medicine-icon.png"
-                    alt="medicine"
-                  ></img>
-                </div>
-              </div>
-              <div className="item">
-                <div className="dept-logo">
-                  <img
-                    src="/resources/departmentlogos/internal-medicine-icon.png"
-                    alt="medicine"
-                  ></img>
-                </div>
-              </div>
+            <OwlCarousel
+              className="owl-theme mt-4"
+              items="5"
+              loop
+              margin={20}
+              autoplay
+              nav
+            >
+              <OwlItem
+                image="/resources/departmentlogos/1.png"
+                title="Anaesthesia"
+              />
+              <OwlItem image="/resources/departmentlogos/2.png" title="Skin" />
+              <OwlItem image="/resources/departmentlogos/3.png" title="ENT" />
+              <OwlItem
+                image="/resources/departmentlogos/4.png"
+                title="Gastro"
+              />
+              <OwlItem
+                image="/resources/departmentlogos/5.png"
+                title="Surgery"
+              />
+              <OwlItem
+                image="/resources/departmentlogos/6.png"
+                title="Obs-Gynae"
+              />
+              <OwlItem image="/resources/departmentlogos/7.png" title="IVF" />
+              <OwlItem
+                image="/resources/departmentlogos/8.png"
+                title="Medicine"
+              />
+              <OwlItem
+                image="/resources/departmentlogos/9.png"
+                title="Nephrology"
+              />
+              <OwlItem
+                image="/resources/departmentlogos/10.png"
+                title="Urology"
+              />
+              <OwlItem
+                image="/resources/departmentlogos/11.png"
+                title="Orthopaedics"
+              />
             </OwlCarousel>
-            ;
           </div>
         </div>
       </div>
