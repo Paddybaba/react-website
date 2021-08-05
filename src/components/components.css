@@ -16,6 +16,43 @@
   margin-top: 10%;
 }
 
+/* //////////////// DOCTORS OWL CAROUSEL ////////////////////// */
+.card-body {
+  line-height: 1.5;
+  padding: 2px;
+}
+.card-title{
+  font-size: 1.75vw;
+  font-weight:700
+}
+.card-text{
+  margin-top: -4px;
+  font-size:1.4vw;
+  line-height:1;
+}
+.card-body p{
+  margin-bottom:2%;
+}
+.readmore-btn {
+  border-radius: 4px;
+  background-image: linear-gradient(
+    to right,
+    #1a2980 0%,
+    #26d0ce 51%,
+    #1a2980 100%
+  );
+  background-size: 200%;
+  transition: all 500ms ease;
+  font-size: 1.2vw;
+  border: none;
+  padding: 0.3em;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.readmore-btn:hover {
+  background-position: right center;
+}
+
 /* ///////////////////// MEDIA QUERIES ////////////////// */
 @media (max-width: 576px) {
   .owl-item-title {

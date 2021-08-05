@@ -4,6 +4,7 @@ import Navbar3 from "./Navbar3";
 import CarouselBG from "./CarouselBG";
 import Doctors from "./pages/Doctors";
 import OwlDepartments from "./components/OwlDepartments";
+import OwlDoctors from "./components/OwlDoctors";
 const Home = () => {
   const photo = "/resources/design/hospital.png";
   return (
@@ -30,7 +31,8 @@ const Home = () => {
         </div>
       </section>
       <OwlDepartments />
-      <Doctors />
+      <OwlDoctors />
+      {/* <Doctors /> */}
     </>
   );
 };
