@@ -6,11 +6,12 @@ import OwlItemdoctors from "./OwlItemdoctors";
 const OwlDoctors = () => {
   return (
     <>
-      <div className="">
+      <div className="owl-doctors">
         <div className="">
-          <div className="col-8 mx-auto">
+          <div className="col-9 mx-auto">
+            <h1 className="text-center text-uppercase pt-3">Our Doctors</h1>
             <OwlCarousel
-              className="owl-theme mt-4"
+              className="owl-theme mt-4 "
               items="3"
               loop
               margin={20}
@@ -18,9 +19,14 @@ const OwlDoctors = () => {
               nav
             >
               <OwlItemdoctors
-                drname="Anup Padamwar"
-                degree="MBBS, MS Ortho"
-                image="/resources/doctors/dranup.jpg"
+                drname="Aradhna Gupta"
+                degree="MBBS, MD Gynae"
+                image="/resources/doctors/draradhna.jpg"
+              />
+              <OwlItemdoctors
+                drname="Sumit Gupta"
+                degree="MBBS, MS Surgery"
+                image="/resources/doctors/drsumit.jpg"
               />
               <OwlItemdoctors
                 drname="Anup Padamwar"
@@ -28,14 +34,9 @@ const OwlDoctors = () => {
                 image="/resources/doctors/dranup.jpg"
               />
               <OwlItemdoctors
-                drname="Anup Padamwar"
-                degree="MBBS, MS Ortho"
-                image="/resources/doctors/dranup.jpg"
-              />
-              <OwlItemdoctors
-                drname="Anup Padamwar"
-                degree="MBBS, MS Ortho"
-                image="/resources/doctors/dranup.jpg"
+                drname="Vivek Tigga"
+                degree="MBBS, MD Medicine"
+                image="/resources/doctors/drvivek.jpg"
               />
             </OwlCarousel>
           </div>

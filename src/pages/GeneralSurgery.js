@@ -26,9 +26,12 @@ const GeneralSurgery = () => {
           Parathyroid surgeries<br>
           Breast surgeries<br>
           Cholecystectomy<br>Diagnostic Laparoscopy<br>Appendectomy<br>Inguinal hernia repair<br>Incisional and ventral hernia repair<br>Adrenalectomy<br>Splenectomy<br>Treatment of hydatid disease of the liver<br>Fundoplication for heart burn<br>Cardiomyotomy for achalasia cardia<br>Colectomy<br>Rectopexy<br>Nephrectomy<br>Treatment for varicocele<br>Sleeve gastrectomy for morbid obesity"
-        //   extra_heading,
-        //   extra_card_pic,
-        //   extra_card_text
+        info_3_heading=""
+        info_3_text=""
+        info_3_list=""
+        extra_heading="Our Consultant"
+        extra_card_pic="/resources/doctors/drsumit.jpg"
+        extra_card_text="Dr Sumit Gupta, M.B.B.S. MS Surgery, Laproscopy specialist"
       />
     </>
   );

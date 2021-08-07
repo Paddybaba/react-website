@@ -6,9 +6,12 @@ import OwlItem from "./OwlItem";
 const OwlDepartments = () => {
   return (
     <>
-      <div className="">
+      <div className="bg-1">
         <div className="">
           <div className="col-8 mx-auto">
+            <h1 className="text-center text-uppercase fs-2 pt-3">
+              Our departments
+            </h1>
             <OwlCarousel
               className="owl-theme mt-4"
               items="5"
@@ -33,7 +36,7 @@ const OwlDepartments = () => {
               />
               <OwlItem
                 image="/resources/departmentlogos/6.png"
-                title="Obs-Gynae"
+                title="Obstetrics"
               />
               <OwlItem image="/resources/departmentlogos/7.png" title="IVF" />
               <OwlItem

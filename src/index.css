@@ -262,6 +262,9 @@
     font-size: 0.8em;
     line-height: 16px;
   }
+  .carousel-background {
+    width: 113%;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
